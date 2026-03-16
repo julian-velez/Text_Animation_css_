@@ -1,0 +1,45 @@
+body{
+    background: radial-gradient(circle at center,#000,#050520);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+h1{
+
+    font-family:'Anton', sans-serif;
+    font-size:180px;
+    color:#00ffff;
+    letter-spacing:10px;
+
+    text-shadow:
+    1px 1px 0 #00d9ff,
+    2px 2px 0 #00c8ff,
+    3px 3px 0 #00b7ff,
+    4px 4px 0 #00a6ff,
+    5px 5px 0 #0095ff,
+    6px 6px 0 #0084ff,
+    7px 7px 0 #0073ff,
+    8px 8px 0 #005fff,
+    9px 9px 10px rgba(0,0,0,0.8),
+    15px 15px 40px rgba(0,255,255,0.8);
+
+    animation: float3d 3s ease-in-out infinite;
+}
+
+@keyframes float3d{
+
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) translateY(0px);
+    }
+
+    50%{
+        transform: rotateX(15deg) rotateY(-15deg) translateY(-30px);
+    }
+
+    100%{
+        transform: rotateX(0deg) rotateY(0deg) translateY(0px);
+    }
+
+}
